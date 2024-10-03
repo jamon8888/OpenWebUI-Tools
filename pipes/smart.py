@@ -180,13 +180,13 @@ class Pipe:
             default="openai/gpt-4o-2024-08-06", description="Model for large tasks"
         )
         HUGE_MODEL: str = Field(
-            default="anthropic/claude-3.5-sonnet", description="Model for the largest tasks"
+            default="openai/gpt-4o-2024-08-06", description="Model for the largest tasks"
         )
         ONLINE_MODEL: str = Field(
-            default="perplexity/llama-3.1-sonar-large-128k-online", description="Online Model"
+            default="openai/gpt-4o-2024-08-06", description="Online Model"
         )
         REASONING_MODEL: str = Field(
-            default="anthropic/claude-3.5-sonnet"
+            default="openai/gpt-4o-2024-08-06"
         )
         MINI_REASONING_MODEL: str = Field(
             default="openai/gpt-4o-2024-08-06", description="Reasoning for the -mini Model"
@@ -195,12 +195,12 @@ class Pipe:
             default="False", description="Use Groq planning model, input model ID if you want to use it."
         )
         GROQ_API_KEY: str = Field(
-           default="", description="Groq API key"
+           default="", description="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"
         )
         ONLY_USE_GROQ_FOR_MINI: bool = Field(
             default=True, description="Only use Groq planning model for mini tasks"
         )
-        AGENT_NAME: str = Field(default="Smart/Core", description="Name of the agent")
+        AGENT_NAME: str = Field(default="Smart/Core", description="VML")
         AGENT_ID: str = Field(default="smart-core", description="ID of the agent")
 
     def __init__(self):
